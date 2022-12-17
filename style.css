@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  color: #dc3545;
+}
+
+input {
+  padding: 7px;
+}
+
+input:not(:disabled) {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #dc3545;
+}
+
+label {
+  color: #000;
+}
+
+.guess-result-info {
+  font-size: 1.3rem;
+}
+
+.score-wrapper-outer {
+  margin-top: 30px;
+  border: 1px solid #000;
+}
+
+.score {
+  font-size: 2.5rem;
+  padding: 8px 15px;
+}
+
+.score-owner {
+  padding: 4px;
+}
+
+.score,
+.score-owner {
+  text-align: center;
+  border-top: 1px solid #000;
+}
+
+.score-wrapper-inner:last-of-type .score,
+.score-wrapper-inner:last-of-type .score-owner {
+  border-left: 1px solid #000;
+}
+
+/* .active::before {
+  content: '\f111';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 8px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  font-weight: 900;
+} */
+
+.active {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.winning-screen-wrapper h1 {
+  color: #2dbe25;
+}
